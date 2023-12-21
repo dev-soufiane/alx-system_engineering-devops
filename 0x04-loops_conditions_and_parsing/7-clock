@@ -6,11 +6,11 @@
 current_hour=0
 
 while [ $current_hour -le 12 ]; do
-    echo "Current Hour: $current_hour"
+    printf "Hour: %d\n" $current_hour
 
     current_minute=1
     while [ $current_minute -le 59 ]; do
-        echo "Current Minute: $current_minute"
+        printf "%d\n" $current_minute
         ((current_minute++))
     done
 
