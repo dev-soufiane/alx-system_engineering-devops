@@ -71,3 +71,4 @@ Happy scripting! 🚀
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+ 0x0D. Web stack debugging #0
