@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Bash script to install HAProxy version 1.8 with the following configuration
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.5
+sudo apt-get -y update
+
+# Bash script to install HAProxy.
+sudo apt-get -y install haproxy
+sudo sed -i -e '$aENABLED=1\n' /etc/default/haproxy
+sudo sed -i -e '$a\listen http-in\n\tbind :80\n\tbalance roundrobin\n\tserver 465452-web-01 100.26.166.132:80 check\n\tserver 465452-web-02 107.21.148.17:80 check\n' /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
