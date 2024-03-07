@@ -49,4 +49,4 @@ frontend soufianecode-frontend-https
 backend soufianecode-backend
         balance roundrobin
         server 465452-web-01 100.26.166.132:80 check
-        server 465452-web-02 107.21.148.17:80 ch
+        server 465452-web-02 107.21.148.17:80 check
